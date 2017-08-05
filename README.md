@@ -14,6 +14,10 @@
 
 #### Add build platform
 + cordova platform add osx
++ cordova platform add ios
+
+#### Install IOS Emulator
++ cd platforms/ios/cordova && npm install ios-sim
 
 #### Build project
 + cordova build osx
