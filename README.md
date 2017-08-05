@@ -1,5 +1,4 @@
 ## Cordova Test Repo
---------------------
 
 ### Install Cordova Globally
 npm install -g cordova
