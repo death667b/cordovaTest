@@ -52,3 +52,14 @@ var app = {
 
 app.initialize();
 
+function setLocalStorage() { 
+   localStorage.setItem("Name", "John"); 
+   localStorage.setItem("Job", "Developer"); 
+   localStorage.setItem("Project", "Cordova Project"); 
+} 
+
+function showLocalStorage() { 
+   console.log(localStorage.getItem("Name")); 
+   console.log(localStorage.getItem("Job")); 
+   console.log(localStorage.getItem("Project")); 
+} 
