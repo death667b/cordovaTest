@@ -1,22 +1,22 @@
 ## Cordova Test Repo
 
-### Install Cordova Globally
+#### Install Cordova Globally
 npm install -g cordova
 
-### Confirm Cordova is installed
+#### Confirm Cordova is installed
 cordova -v
 
-### Create a new cordova app
+#### Create a new cordova app
 cordova create cordovaTest io.cordova.hellocordova CordovaApp
 
-### List possible cordova platforms to add
+#### List possible cordova platforms to add
 cordova platform list
 
-### Add build platform
+#### Add build platform
 cordova platform add osx
 
-### Build project
+#### Build project
 cordova build osx
 
-### Run project
+#### Run project
 cordova run osx
