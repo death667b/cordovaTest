@@ -12,6 +12,9 @@
         },
         "cordova-plugin-console": {
             "PACKAGE_NAME": "com.spinnys.hellocordova"
+        },
+        "cordova-plugin-battery-status": {
+            "PACKAGE_NAME": "com.spinnys.hellocordova"
         }
     },
     "dependent_plugins": {}

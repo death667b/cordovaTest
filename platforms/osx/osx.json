@@ -12,8 +12,20 @@
         },
         "cordova-plugin-console": {
             "PACKAGE_NAME": "com.spinnys.hellocordova"
+        },
+        "cordova-plugin-battery-status": {
+            "PACKAGE_NAME": "com.spinnys.hellocordova"
         }
     },
     "dependent_plugins": {},
-    "modules": []
+    "modules": [
+        {
+            "file": "plugins/cordova-plugin-battery-status/www/battery.js",
+            "id": "cordova-plugin-battery-status.battery",
+            "pluginId": "cordova-plugin-battery-status",
+            "clobbers": [
+                "navigator.battery"
+            ]
+        }
+    ]
 }

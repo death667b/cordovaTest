@@ -12,13 +12,15 @@
     "dependencies": {
         "cordova-ios": "^4.4.0",
         "cordova-osx": "^4.0.1",
+        "cordova-plugin-battery-status": "^1.2.4",
         "cordova-plugin-console": "^1.0.7",
         "cordova-plugin-whitelist": "^1.3.2"
     },
     "cordova": {
         "plugins": {
             "cordova-plugin-whitelist": {},
-            "cordova-plugin-console": {}
+            "cordova-plugin-console": {},
+            "cordova-plugin-battery-status": {}
         },
         "platforms": [
             "ios",
