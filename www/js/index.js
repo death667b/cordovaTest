@@ -21,12 +21,13 @@ var app = {
     initialize: function() {
         document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
         document.addEventListener("volumeupbutton", callbackFunction, false); 
+        document.addEventListener("backbutton", onBackKeyDown, false); 
 
         document.getElementById("setLocalStorage").addEventListener("click", setLocalStorage); 
         document.getElementById("showLocalStorage").addEventListener("click", showLocalStorage); 
         document.getElementById("removeProjectFromLocalStorage").addEventListener("click", removeProjectFromLocalStorage); 
         document.getElementById("getLocalStorageByKey").addEventListener("click", getLocalStorageByKey);  
-        
+
         var localStorage = window.localStorage; 
     },
 
@@ -75,4 +76,9 @@ function getLocalStorageByKey() {
  
 function callbackFunction() { 
    alert('Volume Up Button is pressed!');
+}
+ 
+function onBackKeyDown(e) { 
+   e.preventDefault(); 
+   alert('Back Button is Pressed!'); 
 }
