@@ -22,6 +22,7 @@ var app = {
         document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
         document.addEventListener("volumeupbutton", callbackFunction, false); 
         document.addEventListener("backbutton", onBackKeyDown, false); 
+        window.addEventListener("batterystatus", onBatteryStatus, false);
 
         document.getElementById("setLocalStorage").addEventListener("click", setLocalStorage); 
         document.getElementById("showLocalStorage").addEventListener("click", showLocalStorage); 
@@ -81,4 +82,8 @@ function callbackFunction() {
 function onBackKeyDown(e) { 
    e.preventDefault(); 
    alert('Back Button is Pressed!'); 
+}
+
+function onBatteryStatus(info) { 
+   alert("BATTERY STATUS:  Level: " + info.level + " isPlugged: " + info.isPlugged); 
 }
