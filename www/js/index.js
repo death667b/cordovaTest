@@ -63,3 +63,11 @@ function showLocalStorage() {
    console.log(localStorage.getItem("Job")); 
    console.log(localStorage.getItem("Project")); 
 } 
+
+function removeProjectFromLocalStorage() {
+   localStorage.removeItem("Project");
+}
+
+function getLocalStorageByKey() {
+   console.log(localStorage.key(0));
+}
